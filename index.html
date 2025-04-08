@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Court</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      background-image: url("backgroung.jpg");
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .navbar h2 {
+      margin: 0;
+    }
+
+    .nav-buttons button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x600/?foodcourt,restaurant');
+      background-size: cover;
+      background-position: center;
+      padding: 3rem;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    /* Cards Grid */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .view-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .view-btn:hover {
+      background-color: #218838;
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .nav-buttons {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>🍴 Food Court</h2>
+    <div class="nav-buttons">
+      <button>User Login</button>
+      <button>View Cart</button>
+      <button>Admin Login</button>
+      <button>Add to Cart</button>
+      <button>Menu</button>
+      <button>Order</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Welcome to the Food Court 🍽️</h1>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <img src="logo.jpg" alt="Pizza">
+      <button class="view-btn">View Menu</button>
+    </div>
+    <div class="card">
+      <img src="biriyani.jpg" alt="Biryani">
+      <button class="view-btn">View Menu</button>
+    </div>
+    <div class="card">
+      <img src="cake.jpg" alt="Cake">
+      <button class="view-btn">View Menu</button>
+    </div>
+    <div class="card">
+      <img src="ap.jpg" alt="South Indian Thali">
+      <button class="view-btn">View Menu</button>
+    </div>
+    <div class="card">
+      <img src="icecream.jpg" alt="Ice Cream">
+      <button class="view-btn">View Menu</button>
+    </div>
+    <div class="card">
+      <img src="tiffin.jpg" alt="Snacks">
+      <button class="view-btn">View Menu</button>
+    </div>
+  </div>
+
+</body>
+</html>
